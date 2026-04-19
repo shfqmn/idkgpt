@@ -44,7 +44,7 @@ function typewriterEffect(msg: Message, text: string) {
   msg.displayedContent = ''
   msg.typing = true
   const interval = setInterval(() => {
-    msg.displayedContent += text[i]
+    msg.displayedContent = (msg.displayedContent ?? '') + (text[i] ?? '')
     i++
     scrollToBottom()
     if (i >= text.length) {
