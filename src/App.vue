@@ -167,7 +167,6 @@ const canSend = computed(() => input.value.trim().length > 0 && !isTyping.value)
               </svg>
             </button>
           </form>
-          <p class="disclaimer">idkGPT literally doesn't know anything. Every answer is "idk haha".</p>
         </div>
       </div>
     </main>
